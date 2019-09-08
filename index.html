@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Ordenador de Livros</title>
+		<meta name="author" content="Cleberton de Souza Oliveira"/>
+		<meta charset="utf-8">	
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	</head>
+	<body>
+		<div class="row container center">	
+			<h2>Ordenação de Livros</h2>
+			</br>
+			<p class="container">Bem vindo ao sistema de Ordenação de Livros, por favor envie os livros que desejá ordenar e click na coluna que deseja ordenada</p>
+			</br></br>
+		</div>
+		<div class="row container">
+			<div class="col s5">
+		  		<h4>Cadastrar Livro</h4>
+		  		<form class="col s10" action="">
+		  			<label id='etiqueta' for='titulo'>Titulo</label>
+					<input required type="text" name="titulo" placeholder="Digite o titulo...">
+					<label id='etiqueta' for='autor'>Autor</label>
+					<input required type="text" name="autor" placeholder="Digite o autor...">
+					<label id='etiqueta' for='ano'>Ano</label>
+					<input required type="number" name="ano" placeholder="Digite o ano...">
+					<div class="btn center" id="adiconar_dados">Adicionar</div>
+				</form>
+				
+			</div>
+			<div class="col s5">
+				<h4>Livros Cadastrados</h4>
+				  <div  class="switch">
+				    <label>
+				      Crescente
+				      <input id="decrecente" type="checkbox">
+				      <span class="lever"></span>
+				      Decrescente
+				    </label>
+				  </div>
+				<table id="tabela" class="responsive-table centered">
+			        <thead>
+			          <tr>
+						<th  onclick="ordenar(0)"><div class='btn-flat'>Titulo</div></th>
+						<th  onclick="ordenar(1)"><div class='btn-flat'>Autor</div></th>
+						<th  onclick="ordenar(2)"><div class='btn-flat'>Ano de Lançamento</div></th>
+			          </tr>
+			        </thead>
+			        <tbody>
+			        </tbody>
+		      	</table>
+			</div>
+		</div>
+		<template id="nova_linha">
+		  <tr>
+		    <td id="coluna_titulo"></td>
+		    <td id="coluna_autor"></td>
+		    <td id="coluna_ano"></td>
+		  </tr>
+		</template> 
+		<script type="text/javascript" src="js/ordenador.js"></script> 
+	</body>
+</html>

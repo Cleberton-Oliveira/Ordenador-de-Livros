@@ -1,0 +1,40 @@
+.center_page{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.conteinerText{
+	background-color: black;
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	vertical-align:middle;
+	display:table-cell;
+
+}
+
+.conteinerCounter{	
+	text-align: center;
+	background-color: green;
+	width: 200px;
+	height: 150px;
+
+}
+
+#text{
+	font-size: 12pt;
+	color: white;
+	font-weight:bold;
+}
+
+#counter{
+	font-size: 90pt;
+	font-family: "Times New Roman", Times, serif;
+	color: white;
+}
+
+
+

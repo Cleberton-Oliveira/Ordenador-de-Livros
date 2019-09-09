@@ -22,7 +22,7 @@ function adicionar_livros(event){
 };
 
 function ordena(coluna, tipo){
-	var coluna_selecionada = coluna;
+	var coluna_selecionada = parseInt(coluna);
 	var tabela = document.getElementById("tabela");
 	var tbody = tabela.getElementsByTagName("tbody")[0];
 	var rows = tbody.getElementsByTagName("tr");

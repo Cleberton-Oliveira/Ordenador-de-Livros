@@ -10,7 +10,7 @@
 		<div class="row container center">	
 			<h2>Ordenação de Livros</h2>
 			</br>
-			<p class="container">Bem vindo ao sistema de Ordenação de Livros, por favor envie os livros que desejá ordenar e click na coluna que deseja ordenada</p>
+			<p class="container">Bem vindo ao sistema de Ordenação de Livros, por favor envie os livros que desejá ordenar e click na coluna que deseja ordenada, click outra vez para reverter o resultado</p>
 			</br></br>
 		</div>
 		<div class="row container">
@@ -29,20 +29,12 @@
 			</div>
 			<div class="col s5">
 				<h4>Livros Cadastrados</h4>
-				  <div  class="switch">
-				    <label>
-				      Crescente
-				      <input id="decrecente" type="checkbox">
-				      <span class="lever"></span>
-				      Decrescente
-				    </label>
-				  </div>
 				<table id="tabela" class="responsive-table centered">
 			        <thead>
 			          <tr>
-						<th  onclick="ordenar(0)"><div class='btn-flat'>Titulo</div></th>
-						<th  onclick="ordenar(1)"><div class='btn-flat'>Autor</div></th>
-						<th  onclick="ordenar(2)"><div class='btn-flat'>Ano de Lançamento</div></th>
+						<th  onclick="ordena(0, 'T')"><div class='btn-flat blue-text'>Titulo</div></th>
+						<th  onclick="ordena(1, 'T')"><div class='btn-flat blue-text'>Autor</div></th>
+						<th  onclick="ordena(2, 'N')"><div class='btn-flat blue-text'>Ano de Lançamento</div></th>
 			          </tr>
 			        </thead>
 			        <tbody>
@@ -52,9 +44,9 @@
 		</div>
 		<template id="nova_linha">
 		  <tr>
-		    <td id="coluna_titulo"></td>
-		    <td id="coluna_autor"></td>
-		    <td id="coluna_ano"></td>
+		    <td></td>
+		    <td></td>
+		    <td></td>
 		  </tr>
 		</template> 
 		<script type="text/javascript" src="js/ordenador.js"></script> 
